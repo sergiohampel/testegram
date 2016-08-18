@@ -1,0 +1,16 @@
+<ul class="content-list">
+  <li ng-repeat="product in items track by $index">
+    <section class="wrap-list">
+      <img ng-src="{{ product.url }}" alt="" />
+      <h1>{{ product.name }}</h1>
+      <p>Categoria: {{ product.category }}</p>
+      <span>{{ product.price | currency: 'R$ ' }}</span>
+      <button type="button" class="btn btn-add">Adicionar</button>
+
+      <div class="control-link">
+        <a class="edit">Editar</a>
+        <a class="remove" ng-click="remove({id: product._id})">Excluir</a>
+      </div>
+    </section>
+  </li>
+</ul>

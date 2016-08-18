@@ -1,0 +1,9 @@
+<section class="preview">
+  <h2 class="preview-title">Preview do produto</h2>
+  <img class="preview-image" ng-src="{{ RegistrationFormCtrl.url }}" ng-show="RegistrationFormCtrl.url" alt="Imagem do produto" />
+  <h3 class="preview-name" ng-show="RegistrationFormCtrl.productName">{{ RegistrationFormCtrl.productName }}</h3>
+  <p class="preview-category" ng-show="RegistrationFormCtrl.category"><em>Categoria:</em> {{ RegistrationFormCtrl.category }}</p>
+  <p class="preview-price" ng-show="RegistrationFormCtrl.price">{{ RegistrationFormCtrl.price | currency: 'R$ '}}</p>
+
+  <!-- <button type="button" name="button" class="btn btn-preview">Adicionar</button> -->
+</section>

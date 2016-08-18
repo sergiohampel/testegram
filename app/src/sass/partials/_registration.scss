@@ -1,0 +1,99 @@
+.content-form {
+  @include make-md-column(6);
+  color: #fff;
+}
+
+.preview {
+  @include make-md-column(4);
+  @include make-md-column-offset(2);
+  background-color: #fff;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  color: #6e6e6e;
+  display: inline-block;
+  padding: 0 30px 30px;
+  width: 100%;
+}
+
+legend,
+.preview-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.preview-title {
+  margin: 30px 0 0;
+}
+
+.preview-name {
+  font-size: 14px;
+  margin: 15px 0 0;
+  word-wrap: break-word;
+}
+
+.preview-category,
+.preview-price {
+  font-size: 12px;
+  margin: 10px 0 0;
+}
+
+.preview-image {
+  border: 1px dashed #000;
+  border-radius: 4px;
+  margin-top: 20px;
+  min-height: 200px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.preview-category em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+legend {
+  color: #fff;
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.container-form {
+  padding-top: 70px;
+
+  form {
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  label {
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+  }
+
+  .btn {
+    float: right;
+    margin-top: 10px;
+  }
+
+  .group-field {
+    @include make-row();
+  }
+
+  .inline {
+    @include make-md-column(4);
+  }
+}
+
+.form-products {
+  margin-top: 30px;
+}
+
+.btn-preview {
+  background-color: #e09b1e;
+
+  &:hover {
+    background-color: #4de9ea;
+  }
+}

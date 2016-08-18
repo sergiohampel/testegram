@@ -1,0 +1,35 @@
+<form name="registrationProducts" class="form-products">
+  <fieldset>
+    <legend>Cadastro de produtos</legend>
+
+    <div class="form-group">
+      <input type="text" class="form-input" maxlength="60" ng-maxlength="60" ng-model-options="{debounce:{default: 500}}" ng-model="RegistrationFormCtrl.productName" ng-required="true">
+      <label class="form-label" for="product-name">Nome do produto</label>
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="form-input" ng-model-options="{debounce:{default: 500}}" ng-model="RegistrationFormCtrl.url" ng-required="true">
+      <label class="form-label" for="url">Url da imagem</label>
+    </div>
+
+    <div class="group-field">
+      <div class="form-group inline">
+        <select ng-required="true" ng-model="RegistrationFormCtrl.category" ng-options="category.name as category.name for category in RegistrationFormCtrl.listCategories">
+          <option value="">Selecione a categoria</option>
+        </select>
+      </div>
+
+      <div class="form-group inline">
+        <input type="text" class="form-input" ui-money-mask ng-model="RegistrationFormCtrl.price" ng-required="true">
+        <label class="form-label" for="price">Preço</label>
+      </div>
+
+      <div class="form-group inline">
+        <input type="text" class="form-input" ui-money-mask ng-model="RegistrationFormCtrl.promotionalPrice" ng-required="true">
+        <label class="form-label" for="promotional-price">Preço promocional</label>
+      </div>
+    </div>
+
+    <button type="button" name="button" class="btn btn-form" ng-disabled="registrationProducts.$invalid" ng-click="RegistrationFormCtrl.saveProduct(registrationProducts)">Cadastrar produto</button>
+  </fieldset>
+</form>

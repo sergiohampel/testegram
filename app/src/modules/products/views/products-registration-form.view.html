@@ -1,0 +1,26 @@
+<section class="container-form">
+
+  <!-- content form - start -->
+  <div class="content-form">
+
+    <!-- alert - start -->
+    <div uib-alert ng-repeat="alert in RegistrationFormCtrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="RegistrationFormCtrl.closeAlert($index)">{{ alert.msg }}</div>
+    <!-- alert - end -->
+
+    <!-- registration category - start -->
+    <div ng-include src="'modules/products/partials/products-categories-form.partial.html'"></div>
+    <!-- registration category - end -->
+
+    <!-- registration products - start -->
+    <div ng-include src="'modules/products/partials/products-form.partial.html'"></div>
+    <!-- registration products - end -->
+
+  </div>
+  <!-- content form - end -->
+
+  <!-- preview - start -->
+  <!-- https://static.pexels.com/photos/9574/pexels-photo.jpeg -->
+  <div ng-include src="'modules/products/partials/products-preview.partial.html'"></div>
+  <!-- preview - end -->
+
+</section>

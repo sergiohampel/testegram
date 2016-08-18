@@ -1,0 +1,9 @@
+<section class="container-list">
+  <!-- alert - start -->
+  <div uib-alert ng-repeat="alert in ListCtrl.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="ListCtrl.closeAlert($index)">{{ alert.msg }}</div>
+  <!-- alert - end -->
+
+  <!-- product list - start -->
+  <products-list items="ListCtrl.listProducts" remove="ListCtrl.removeProducts(id)"></products-list>
+  <!-- product list - end -->
+</section>

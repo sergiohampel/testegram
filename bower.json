@@ -1,0 +1,31 @@
+{
+  "name": "products",
+  "description": "Cadastro de produtos.",
+  "main": "app/src/modules/app.module.js",
+  "authors": [
+    "sergiohampel <sergiohampel@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "angular-animate": "^1.5.8",
+    "angular-touch": "^1.5.8",
+    "angular-loading-bar": "^0.9.0",
+    "angular-bootstrap": "^2.0.1",
+    "bootstrap-sass": "^3.3.7",
+    "angular-input-masks": "^2.4.0",
+    "angular-prompt": "^1.2.0"
+  }
+}

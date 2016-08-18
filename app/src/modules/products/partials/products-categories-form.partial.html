@@ -1,0 +1,12 @@
+<form name="registrationCategory">
+  <fieldset>
+    <legend>Cadastro de categoria</legend>
+
+    <div class="form-group">
+      <input type="text" class="form-input" id="category-name" ng-model="RegistrationFormCtrl.categoryName" ng-required="true">
+      <label class="form-label" for="category-name">Nome da categoria</label>
+    </div>
+
+    <button type="button" class="btn btn-form" ng-disabled="registrationCategory.$invalid" ng-click="RegistrationFormCtrl.saveCategory(registrationCategory)">Cadastrar categoria</button>
+  </fieldset>
+</form>
