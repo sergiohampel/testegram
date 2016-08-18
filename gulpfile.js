@@ -20,15 +20,16 @@ var gulp = require('gulp'),
       cssFiles: 'app/src/sass/**/*.scss',
       htmlFiles: 'app/src/**/*.html',
       bowerFiles: [
-    		'bower_components/angular/angular.min.js',
+        'bower_components/angular/angular.min.js',
         'bower_components/angular-animate/angular-animate.min.js',
         'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
         'bower_components/angular-loading-bar/build/loading-bar.min.js',
-    		'bower_components/angular-resource/angular-resource.min.js',
-    		'bower_components/angular-touch/angular-touch.min.js',
-    		'bower_components/angular-ui-router/release/angular-ui-router.min.js',
+        'bower_components/angular-resource/angular-resource.min.js',
+        'bower_components/angular-touch/angular-touch.min.js',
+        'bower_components/angular-ui-router/release/angular-ui-router.min.js',
         'bower_components/angular-input-masks/angular-input-masks-standalone.js',
-      	'bower_components/angular-prompt/dist/angular-prompt.js'
+        'bower_components/angular-prompt/dist/angular-prompt.js',
+        'bower_components/angular-locale-pt-br/angular-locale_pt-br.js'
     	]
     },
 

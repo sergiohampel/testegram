@@ -1,5 +1,5 @@
 (function(){
-	'use strict';
+  'use strict';
 
-	angular.module('testegram.products', []);
+  angular.module('testegram.products', []);
 })();

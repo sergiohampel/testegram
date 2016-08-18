@@ -15,7 +15,7 @@
     vm.closeAlert = closeAlert;
 
     function activate() {
-			getCategories();
+      getCategories();
     }
 
     function getCategories() {
@@ -27,7 +27,7 @@
     }
 
     function saveCategory(form) {
-			if (form.$valid) {
+      if (form.$valid) {
         CategoriesService.save({name: vm.categoryName}, function(resp){
           if (resp.status === 'success') {
             vm.categoryName = '';
@@ -39,7 +39,7 @@
     }
 
     function saveProduct(form) {
-			if (form.$valid) {
+      if (form.$valid) {
         var params = {
           name: vm.productName,
           url: vm.url,

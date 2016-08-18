@@ -19,9 +19,9 @@
     width: 100%;
 
     &:hover {
-			@include transform(scale(1.02));
-			@include boxShadow(1px 1px 10px rgba($color-default, .4));
-		}
+      @include transform(scale(1.02));
+      @include boxShadow(1px 1px 10px rgba($color-default, .4));
+    }
 
     &:hover .control-link {
       visibility: visible;

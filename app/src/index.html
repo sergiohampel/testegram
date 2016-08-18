@@ -1,82 +1,62 @@
 <!doctype html>
-<html lang="pt-br" data-ng-app="testegram">
+<html lang="pt-br" ng-app="testegram">
 <head>
-	<title>Testegram</title>
+  <title>Testegram</title>
 
-	<!-- META TAGS -->
-	<meta charset="utf-8" />
-	<meta name="description" content="Cadastro de produtos para exibição em tempo real.">
-	<meta name="keywords" content="produtos, angularjs, bootstrap">
-	<meta name="author" content="">
-	<meta name="robots" content="" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<meta name="apple-touch-fullscreen" content="yes">
-	<meta name="HandheldFriendly" content="true">
-	<meta name="format-detection" content="telephone=yes">
-	<meta http-equiv="cleartype" content="on">
+  <!-- META TAGS -->
+  <meta charset="utf-8" />
+  <meta name="description" content="Cadastro de produtos.">
+  <meta name="keywords" content="produtos, angularjs, bootstrap">
+  <meta name="author" content="">
+  <meta name="robots" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=yes">
+  <meta http-equiv="cleartype" content="on">
 
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 
-	<!-- bower:css -->
-	<link rel="stylesheet" href="../../bower_components/angular-loading-bar/build/loading-bar.css" />
-	<!-- endbower -->
+  <!-- bower:css -->
+  <!-- endbower -->
 
-	<!-- build:css -->
-	<!-- inject:css -->
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- build:css -->
+  <!-- inject:css -->
   <!-- endinject -->
-	<!-- endbuild -->
+  <!-- endbuild -->
 
 </head>
 
 <body>
-	<header class="header container">
-		<h1>Testegram</h1>
+  <header class="header container">
+    <h1>Testegram</h1>
 
-		<!-- main navigation - start -->
-		<nav>
-			<ul class="menu">
-				<li><a ui-sref="list" ui-sref-active="active">Lista de produtos</a></li>
-				<li><a ui-sref="registration" ui-sref-active="active">Cadastro de produtos</a></li>
-			</ul>
-		</nav>
-		<!-- main navigation - end -->
+    <!-- main navigation - start -->
+    <nav>
+      <ul class="menu">
+        <li><a ui-sref="list" ui-sref-active="active">Lista de produtos</a></li>
+        <li><a ui-sref="registration" ui-sref-active="active">Cadastro de produtos</a></li>
+      </ul>
+    </nav>
+    <!-- main navigation - end -->
 
-	</header>
+  </header>
 
-	<div class="container">
-		<ui-view></ui-view>
-	</div>
+  <div class="container">
+    <ui-view></ui-view>
+  </div>
 
-	<!-- build:js -->
-	<!-- bower:js -->
-	<script src="../../bower_components/angular/angular.js"></script>
-	<script src="../../bower_components/angular-resource/angular-resource.js"></script>
-	<script src="../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-	<script src="../../bower_components/angular-animate/angular-animate.js"></script>
-	<script src="../../bower_components/angular-touch/angular-touch.js"></script>
-	<script src="../../bower_components/angular-loading-bar/build/loading-bar.js"></script>
-	<script src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-	<script src="../../bower_components/angular-input-masks/angular-input-masks-standalone.js"></script>
-	<script src="../../bower_components/angular-prompt/dist/angular-prompt.js"></script>
-	<!-- endbower -->
+  <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
 
-	<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-i18n/1.5.8/angular-locale_pt-br.min.js"></script>
+  <!-- build:js -->
+  <!-- bower:js -->
+  <!-- endbower -->
 
-	<!-- inject:js -->
-	<script src="modules/app.module.js"></script>
-	<script src="modules/products/products.module.js"></script>
-	<script src="modules/products/controllers/products-list.controller.js"></script>
-	<script src="modules/products/controllers/products-registration-form.controller.js"></script>
-	<script src="modules/products/directives/products-list.directive.js"></script>
-	<script src="modules/products/factory/products-api-categories.factory.js"></script>
-	<script src="modules/products/factory/products-api-products.factory.js"></script>
-	<script src="modules/products/values/products.api.value.js"></script>
-	<!-- endinject -->
-	<!-- endbuild -->
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- endbuild -->
 
 </body>
 </html>

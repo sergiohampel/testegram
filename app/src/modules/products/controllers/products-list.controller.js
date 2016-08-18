@@ -14,19 +14,19 @@
     vm.closeAlert = closeAlert;
 
     function activate() {
-			getProducts();
+      getProducts();
 
       var socket = io('http://localhost:5000/');
 
       socket.on('products', function(product){
-      	console.log(product);
+        console.log(product);
       });
     }
 
     function getProducts() {
       ProductsService.get(function(resp){
         if (resp.status === 'success') {
-          vm.listProducts = resp.data;
+          updateProductsList(resp.data);
         }
       });
     }
@@ -42,12 +42,14 @@
             'primary': true
           }
         ]
-      }).then(function(result){
+      }).then(function(result) {
         ProductsService.remove({id: id }, function(resp){
           if (resp.status === 'success') {
-            vm.listProducts = vm.listProducts.filter(function(item){
+            var items = vm.listProducts.filter(function(item){
               return item._id !== id;
             });
+
+            updateProductsList(items);
 
             $timeout(function() {
               closeAlert(0);
@@ -57,6 +59,10 @@
           }
         });
       });
+    }
+
+    function updateProductsList(val) {
+      vm.listProducts = val;
     }
 
     function addAlert(type, message) {
